@@ -4,11 +4,9 @@ import time
 import copy
 import pandas as pd
 
-from pymongo import MongoClient
 #from bson.objectid import ObjectId
 
 # connect to the hosted MongoDB instance
-client = MongoClient('localhost', 27017)
 
 #Load webpage content 
 def carguru_call(zip):
@@ -28,12 +26,16 @@ def carguru_call(zip):
     spec = body.find_all('span')
     return spec
 def car_organized(zip):
+    
+    
     cars = [c.string for c in carguru_call(zip)]
-    for details in cars:
-        details2 = cars[0].replace(' for sale -', ',')
-        details2 = details2.replace(' - ', ', ')
-        details2 = details2.replace(' with', ',')
-        cars[0] = details2
+    details2 = cars[0].replace(' for sale -', ',')
+    details2 = details2.replace('Used ','')
+    details2 = details2.replace(' - ', ', ')
+    details2 = details2.replace(' with', ',')
+    details2 = details2[:4] + ',' + details2[4:]  
+    cars[0] = details2
+
     return cars
 
 def car_list(zip,num):
@@ -44,20 +46,22 @@ def car_list(zip,num):
     return car_list
 
 def populate_car_list(zip,num):
-    with open('./carlist.csv','w') as f:
+    with open('./carlist.csv','a') as f:
         for item in car_list(zip,num):
             f.write("%s\n" % item)
+    pass
+   
+zip_codes_data = pd.read_csv('zip_code_database.csv')
+zips = zip_codes_data['zip'].to_numpy()
+    
 
-def zip_code_list():    
-    zip_codes_data = pd.read_csv('zip_code_database.csv')
-    zips = zip_codes_data['zip'].to_numpy()
-    return zips
-
-for i in zip_code_list():
-    populate_car_list(zip_code_list(), 1)
+def populate_csv(lst, num):
+    for i in lst:
+        populate_car_list(i, num)
+    pass
 
 
-
-
-#populate_car_list(94004,1)
+for i in zips:
+    if int(i) > 10000:
+        populate_car_list(int(i),10)
 
