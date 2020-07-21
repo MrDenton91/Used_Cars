@@ -8,7 +8,7 @@ As of July 20, 2020
   + current code produces 11k results every 4 hours.
       -About 2750 every hour.
   + data collected: 
-      - zipcode, year, make/model, price, milage,alloy wheels, Bluetooth, Back-up camera, certified pre-owned, remote start, leather seats, sunroof/moonroof, appearance package, transmision type, color
+      - zipcode, year, make/model, price, milage,alloy wheels, Bluetooth, Back-up camera, certified pre-owned, remote start, leather seats, sunroof/moonroof, 'Special' package, transmision type, color
       
 
   
