@@ -10,6 +10,10 @@ As of July 20, 2020
   + data collected: 
       - zipcode, year, make/model, price, milage,alloy wheels, Bluetooth, Back-up camera, certified pre-owned, remote start, leather seats, sunroof/moonroof, 'Special' package, transmision type, color
       
-
-  
+As of July 22, 2020
+  - Data was collected on Los Angeles, Chicago, and New York city areas. Random sampleing was collected in a 100 mile radius, with 100 samples being collected at each zipcode.
+  - Fast facts: 
+    + around 40.8 million used cars were sold in 2019, 
+    + on average a zip-code covers 82.25 sq miles,
+        ~ I expect some repeats in my data.
       
