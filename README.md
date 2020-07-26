@@ -48,24 +48,24 @@ July 23, 2020
           
           
 July 24, 2020
-    -( about 5:30 ) Started my scraping programs for New York, L.A., and Chicago
-        + 10 minutes in I had over 10k cars in 10 minutes, regardless of repeats the number of cars being collected will be huge.
-    - Using the 10k cars I had I started re-working my data cleaning functions in jupyter notebook
-        + finished cleaning functions, I just need to let scrapers run.
-    - Scrapers finshed all together in 2-hours, over 640k cars collected.
+  - ( about 5:30 ) Started my scraping programs for New York, L.A., and Chicago
+    + 10 minutes in I had over 10k cars in 10 minutes, regardless of repeats the number of cars being collected will be huge.
+      - Using the 10k cars I had I started re-working my data cleaning functions in jupyter notebook
+          + finished cleaning functions, I just need to let scrapers run.
+      - Scrapers finshed all together in 2-hours, over 640k cars collected.
         + intersting points:
-            ~ After running cleaning, and removing duplicates, and any row that has a NUll value.
-              I saw had ~11k unique cars, which correlates with the 98% loss I saw in my first run.
-              Now I should note, I'm using a 20 mile radius and car.com sorts and shows the cars which are closest to your location first.
-    - Ploted some graphs showning the top 10 car manufatures I'm interested for EDA:
-        ~ see Github page for graps
-    - Hypothesis Testing:
-        + does average price of used toyota ~= used mazda with alpha =0.05
-          Do a T-test, I didn't have time for power, But I did get a value of 0.06
-          So Yes the price of a used mazda = used toyota
-        + does average price of a used mercedes-benz ~= used BMW with alpha =0.05
-           Do a T-test, I didn't have time for power, But I did get a value of 0.0006..
-           So no the price of a used mercedes /= used BMW
+          ~ After running cleaning, and removing duplicates, and any row that has a NUll value.
+          I saw had ~11k unique cars, which correlates with the 98% loss I saw in my first run.
+          Now I should note, I'm using a 20 mile radius and car.com sorts and shows the cars which are closest to your location first.
+ - Ploted some graphs showning the top 10 car manufatures I'm interested for EDA:
+  + see Github page for graps
+ - Hypothesis Testing:
+  + does average price of used toyota ~= used mazda with alpha =0.05
+    ~ Do a T-test, I didn't have time for power, But I did get a value of 0.06
+    ~ So Yes the price of a used mazda = used toyota
+  + does average price of a used mercedes-benz ~= used BMW with alpha =0.05
+    ~ Do a T-test, I didn't have time for power, But I did get a value of 0.0006..
+    ~ So no the price of a used mercedes /= used BMW
             
 
 
