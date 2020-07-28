@@ -58,7 +58,7 @@ July 24, 2020
           I saw had ~11k unique cars, which correlates with the 98% loss I saw in my first run.
           Now I should note, I'm using a 20 mile radius and car.com sorts and shows the cars which are closest to your location first.
  - Ploted some graphs showning the top 10 car manufatures I'm interested for EDA:
-  + see Github page for graps
+  + see Github page for graphs
  - Hypothesis Testing:
   + does average price of used toyota ~= used mazda with alpha =0.05
     ~ Do a T-test, I didn't have time for power, But I did get a value of 0.06
